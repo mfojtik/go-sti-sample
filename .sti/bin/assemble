@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+mkdir -p ${GOPATH}/src/github.com/mfojtik/go-sti-sample
+
+echo "---> Installing application source"
+cp -Rf /tmp/src/* ${GOPATH}/src/github.com/mfojtik/go-sti-sample
+
+echo "---> Building Go application"
+go get github.com/mfojtik/go-sti-sample
